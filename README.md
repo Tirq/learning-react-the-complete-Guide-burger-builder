@@ -1,4 +1,6 @@
- App running: https://tirq.github.io/learning-react-the-complete-Guide-burger-builder/
+App running: https://tirq.github.io/learning-react-the-complete-Guide-burger-builder/
+Step by step - docs ([docs/index.md](docs/index.md))
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
