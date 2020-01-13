@@ -1,4 +1,4 @@
-# 002-add-config-gh-pages
+# 0002-add-config-gh-pages
 
 [index](index.md)
 
