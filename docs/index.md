@@ -5,3 +5,5 @@
 [0002-add-config-gh-pages](0002-add-config-gh-pages.md)
 
 [0003-add-layout-component](0003-add-layout-component.md)
+
+[0004-add-initial-burguer-builder](0004-add-initial-burguer-builder.md)
