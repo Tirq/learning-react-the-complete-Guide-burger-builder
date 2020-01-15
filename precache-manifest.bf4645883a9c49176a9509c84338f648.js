@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4f6f6ef99d478e6e936f4cdee98c8345",
+    "revision": "fb30186fb8264000b14f0294f819bd7e",
     "url": "/learning-react-the-complete-Guide-burger-builder/index.html"
   },
   {
-    "revision": "cfbfe00d8a797206df0f",
+    "revision": "bb6da323e04a868bbc97",
     "url": "/learning-react-the-complete-Guide-burger-builder/static/css/main.c1defe0b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-react-the-complete-Guide-burger-builder/static/js/2.e1af88f4.chunk.js.LICENSE"
   },
   {
-    "revision": "cfbfe00d8a797206df0f",
-    "url": "/learning-react-the-complete-Guide-burger-builder/static/js/main.40254019.chunk.js"
+    "revision": "bb6da323e04a868bbc97",
+    "url": "/learning-react-the-complete-Guide-burger-builder/static/js/main.799b8cbd.chunk.js"
   },
   {
     "revision": "5ba0d7ede459a1438742",
