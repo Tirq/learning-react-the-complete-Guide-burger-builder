@@ -9,3 +9,5 @@
 [0004-add-initial-burguer-builder](0004-add-initial-burguer-builder.md)
 
 [0005-add-initial-ingredient-burguer](0005-add-initial-ingredient-burguer.md)
+
+[0006-turn-burger-ingredient-dynamic](0006-turn-burger-ingredient-dynamic.md)
