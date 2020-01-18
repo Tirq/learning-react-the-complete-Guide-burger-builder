@@ -11,3 +11,5 @@
 [0005-add-initial-ingredient-burguer](0005-add-initial-ingredient-burguer.md)
 
 [0006-turn-burger-ingredient-dynamic](0006-turn-burger-ingredient-dynamic.md)
+
+[0007-add-static-burger-build-controls](0007-add-static-burger-build-controls.md) 
