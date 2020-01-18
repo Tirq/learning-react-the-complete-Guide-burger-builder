@@ -7,9 +7,9 @@ const burger = (props) => {
 
     const burgerIngredients = (ingredients.length === 0) ?
         <p>Please start adding ingredients!</p> :
-        props.ingredients.map((ingredient, index) => {
-            return <BurgerIngredient type={ingredient} key={ingredient+'_'+index}/>
-        });
+        props.ingredients.map((ingredient, index) => (
+            <BurgerIngredient type={ingredient} key={ingredient+'_'+index}/>
+        ));
 
     return (
         <div className={styles.Burger}>
