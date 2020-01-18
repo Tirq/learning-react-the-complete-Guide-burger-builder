@@ -12,4 +12,6 @@
 
 [0006-turn-burger-ingredient-dynamic](0006-turn-burger-ingredient-dynamic.md)
 
-[0007-add-static-burger-build-controls](0007-add-static-burger-build-controls.md) 
+[0007-add-static-burger-build-controls](0007-add-static-burger-build-controls.md)
+
+[0008-add-actions-burger-build-controls](0008-add-actions-burger-build-controls.md)

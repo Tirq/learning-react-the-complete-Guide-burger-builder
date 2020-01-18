@@ -6,13 +6,17 @@ const ingredientTypes =  ['Cheese', 'Meat', 'Salad', 'Bacon'];
 
 const burgerBuildControls = (props) => {
 
+    const controls = ingredientTypes.map( (type,index) => (
+        <BurgerBuildControl
+            key={type + '-' + index}
+            label={type}
+            add={() => props.addIngredient(type)}
+            remove={() => props.removeIngredient(type)} />
+    ));
+
     return (
         <div className={styles.BuildControls}>
-            {
-                ingredientTypes.map(ctrl => (
-                    <BurgerBuildControl  label={ctrl}/>
-                ))
-            }
+            {controls}
         </div>
     );
 
