@@ -5,12 +5,14 @@ import BurgerBuildControls from '../../components/Burger/BurgerBuildControls/Bur
 
 class BurgerBuilder extends Component {
     state = {
-        ingredients: []
+        ingredients: [],
+        totalPrice: 5.5
     }
 
     clonedIngredients = () => this.state.ingredients.slice();
 
-    totalPrice = (ingredients) => ingredients.map(ing => ing.price).reduce((a,b) => a+b, 5);
+    calculateTotalPrice = (ingredients) => ingredients.map(ing => ing.price)
+                                             .reduce((a,b) => a+b, 5.5);
 
     removeIngredientHandler = (ing) => {
         const ingredients = this.clonedIngredients();
@@ -18,15 +20,15 @@ class BurgerBuilder extends Component {
         if(index > -1){
             ingredients.splice(index,1);
         }
-        this.setState({ingredients});
-        console.log(this.totalPrice(ingredients));
+        const totalPrice = this.calculateTotalPrice(ingredients);
+        this.setState({ingredients, totalPrice});
     }
 
     addIngredientHandler = (ing) => {
         const ingredients = this.clonedIngredients();
         ingredients.push(ing);
-        this.setState({ingredients});
-        console.log(this.totalPrice(ingredients));
+        const totalPrice = this.calculateTotalPrice(ingredients);
+        this.setState({ingredients, totalPrice});
     }
 
     render () {
@@ -39,7 +41,8 @@ class BurgerBuilder extends Component {
                 <BurgerBuildControls
                     names={names()}
                     removeIngredient={this.removeIngredientHandler}
-                    addIngredient={this.addIngredientHandler}/>
+                    addIngredient={this.addIngredientHandler}
+                    totalPrice={this.state.totalPrice}/>
             </Aux>
         );
     }
