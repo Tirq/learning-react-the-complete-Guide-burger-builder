@@ -1,3 +1,4 @@
+#Deprecated! It is better to see the differences between branches than write the changes here.
 ## Se below the changes about each branch/important feature. 
 
 [0001-create-branch-gh-pages](0001-create-branch-gh-pages.md)
