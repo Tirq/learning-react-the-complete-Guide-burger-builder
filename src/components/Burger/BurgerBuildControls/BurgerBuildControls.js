@@ -9,6 +9,8 @@ const ingredientTypes =  [{ name: 'Cheese', price:3.3 },
 
 const burgerBuildControls = (props) => {
 
+    const [names] = [props.names];
+
     const totalPrice = <p>
         Total price: <strong>{props.totalPrice.toFixed(2)}</strong>
     </p>;
@@ -19,12 +21,19 @@ const burgerBuildControls = (props) => {
             label={ing.name}
             add={() => props.addIngredient(ing)}
             remove={() => props.removeIngredient(ing)}
-            disabled={!props.names.includes(ing.name)} />
+            disabled={!names.includes(ing.name)} />
     ));
+
+const orderButton = <button
+                        className={styles.OrderButton}
+                        onClick={props.orderBurger}
+                        disabled={!names.length}>Order now!</button>;
+
     return (
         <div className={styles.BuildControls}>
             {totalPrice}
             {controls}
+            {orderButton}
         </div>
     );
 
