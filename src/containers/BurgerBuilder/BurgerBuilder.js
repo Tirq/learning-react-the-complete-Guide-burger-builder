@@ -31,6 +31,10 @@ class BurgerBuilder extends Component {
         this.setState({ingredients, totalPrice});
     }
 
+    orderBurger = () => {
+        alert('Your burger is being prepared!');
+    }
+
     render () {
 
         const names = () => this.state.ingredients.map(ing => ing.name);
@@ -42,7 +46,8 @@ class BurgerBuilder extends Component {
                     names={names()}
                     removeIngredient={this.removeIngredientHandler}
                     addIngredient={this.addIngredientHandler}
-                    totalPrice={this.state.totalPrice}/>
+                    totalPrice={this.state.totalPrice}
+                    orderBurger={this.orderBurger}/>
             </Aux>
         );
     }
