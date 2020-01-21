@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/learning-react-the-complete-Guide-burger-builder/static/css/main.51374304.chunk.css",
-    "main.js": "/learning-react-the-complete-Guide-burger-builder/static/js/main.b80f6bcb.chunk.js",
-    "main.js.map": "/learning-react-the-complete-Guide-burger-builder/static/js/main.b80f6bcb.chunk.js.map",
+    "main.css": "/learning-react-the-complete-Guide-burger-builder/static/css/main.7aff836a.chunk.css",
+    "main.js": "/learning-react-the-complete-Guide-burger-builder/static/js/main.154cc99d.chunk.js",
+    "main.js.map": "/learning-react-the-complete-Guide-burger-builder/static/js/main.154cc99d.chunk.js.map",
     "runtime-main.js": "/learning-react-the-complete-Guide-burger-builder/static/js/runtime-main.7a7dd317.js",
     "runtime-main.js.map": "/learning-react-the-complete-Guide-burger-builder/static/js/runtime-main.7a7dd317.js.map",
-    "static/js/2.99cdcb9e.chunk.js": "/learning-react-the-complete-Guide-burger-builder/static/js/2.99cdcb9e.chunk.js",
-    "static/js/2.99cdcb9e.chunk.js.map": "/learning-react-the-complete-Guide-burger-builder/static/js/2.99cdcb9e.chunk.js.map",
+    "static/js/2.d1ee4f38.chunk.js": "/learning-react-the-complete-Guide-burger-builder/static/js/2.d1ee4f38.chunk.js",
+    "static/js/2.d1ee4f38.chunk.js.map": "/learning-react-the-complete-Guide-burger-builder/static/js/2.d1ee4f38.chunk.js.map",
     "index.html": "/learning-react-the-complete-Guide-burger-builder/index.html",
-    "precache-manifest.6756e56bab1f62e017b495743a7b3e7d.js": "/learning-react-the-complete-Guide-burger-builder/precache-manifest.6756e56bab1f62e017b495743a7b3e7d.js",
+    "precache-manifest.537e5d99cf67c7427430c9bfce6be60b.js": "/learning-react-the-complete-Guide-burger-builder/precache-manifest.537e5d99cf67c7427430c9bfce6be60b.js",
     "service-worker.js": "/learning-react-the-complete-Guide-burger-builder/service-worker.js",
-    "static/css/main.51374304.chunk.css.map": "/learning-react-the-complete-Guide-burger-builder/static/css/main.51374304.chunk.css.map",
-    "static/js/2.99cdcb9e.chunk.js.LICENSE": "/learning-react-the-complete-Guide-burger-builder/static/js/2.99cdcb9e.chunk.js.LICENSE"
+    "static/css/main.7aff836a.chunk.css.map": "/learning-react-the-complete-Guide-burger-builder/static/css/main.7aff836a.chunk.css.map",
+    "static/js/2.d1ee4f38.chunk.js.LICENSE": "/learning-react-the-complete-Guide-burger-builder/static/js/2.d1ee4f38.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.7a7dd317.js",
-    "static/js/2.99cdcb9e.chunk.js",
-    "static/css/main.51374304.chunk.css",
-    "static/js/main.b80f6bcb.chunk.js"
+    "static/js/2.d1ee4f38.chunk.js",
+    "static/css/main.7aff836a.chunk.css",
+    "static/js/main.154cc99d.chunk.js"
   ]
 }
