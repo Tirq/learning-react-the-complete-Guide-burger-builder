@@ -2,11 +2,14 @@ import React, {Component} from 'react';
 import Aux from '../../hoc/Aux';
 import Burger from '../../components/Burger/Burger';
 import BurgerBuildControls from '../../components/Burger/BurgerBuildControls/BurgerBuildControls';
+import Modal from '../../components/UI/Modal/Modal';
+import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 
 class BurgerBuilder extends Component {
     state = {
         ingredients: [],
-        totalPrice: 5.5
+        totalPrice: 5.5,
+        purchasing: false
     }
 
     clonedIngredients = () => this.state.ingredients.slice();
@@ -31,8 +34,12 @@ class BurgerBuilder extends Component {
         this.setState({ingredients, totalPrice});
     }
 
-    orderBurger = () => {
-        alert('Your burger is being prepared!');
+    orderBurgerHandler = () => {
+        this.setState({purchasing: true});
+    }
+
+    cancelOrderBurgerHandler = () => {
+        this.setState({purchasing: false});
     }
 
     render () {
@@ -41,13 +48,17 @@ class BurgerBuilder extends Component {
 
         return (
             <Aux>
+                <Modal show={this.state.purchasing}
+                        onClose={this.cancelOrderBurgerHandler}>
+                    <OrderSummary names={names()} />
+                </Modal>
                 <Burger ingredients={this.state.ingredients} />
                 <BurgerBuildControls
                     names={names()}
                     removeIngredient={this.removeIngredientHandler}
                     addIngredient={this.addIngredientHandler}
                     totalPrice={this.state.totalPrice}
-                    orderBurger={this.orderBurger}/>
+                    orderBurger={this.orderBurgerHandler}/>
             </Aux>
         );
     }
