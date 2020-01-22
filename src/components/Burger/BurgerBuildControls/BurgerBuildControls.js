@@ -12,7 +12,7 @@ const burgerBuildControls = (props) => {
     const [names] = [props.names];
 
     const totalPrice = <p>
-        Total price: <strong>{props.totalPrice.toFixed(2)}</strong>
+        Total price: <strong>{props.totalPrice}</strong>
     </p>;
 
     const controls = ingredientTypes.map( (ing,index) => (

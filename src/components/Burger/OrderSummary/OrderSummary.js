@@ -1,8 +1,11 @@
 import React from 'react';
 import Aux from '../../../hoc/Aux';
+import Button from './../../UI/Button/Button';
 
 const orderSummary = (props) => {
-    const[names] = [props.names];
+    const[names, totalPrice, cancel, proceed] =
+    [props.names, props.totalPrice, props.cancel, props.proceed];
+
     const title = <h3>Order summary</h3>;
     const groupByName = [];
 
@@ -20,6 +23,10 @@ const orderSummary = (props) => {
         <Aux>
             {title}
             <ul>{ingredients}</ul>
+            <p>Total price: <strong>{totalPrice}</strong></p>
+            <p>Continue to checkout?</p>
+            <Button clicked={cancel} type="Cancel" name='CANCEL'/>
+            <Button clicked={proceed} type='Ok' name='CONTINUE'/>
         </Aux>
     );
 }
