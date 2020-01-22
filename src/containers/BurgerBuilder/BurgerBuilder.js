@@ -34,7 +34,7 @@ class BurgerBuilder extends Component {
         this.setState({ingredients, totalPrice});
     }
 
-    orderBurgerHandler = () => {
+    startOrderBurgerHandler = () => {
         this.setState({purchasing: true});
     }
 
@@ -42,23 +42,33 @@ class BurgerBuilder extends Component {
         this.setState({purchasing: false});
     }
 
+    proceedOrderBurgerHandler = () => {
+        alert('Your burger is on the way! Happy meal ;)');
+    }
+
     render () {
 
         const names = () => this.state.ingredients.map(ing => ing.name);
+
+        const totalPrice = () => this.state.totalPrice.toFixed(2);
 
         return (
             <Aux>
                 <Modal show={this.state.purchasing}
                         onClose={this.cancelOrderBurgerHandler}>
-                    <OrderSummary names={names()} />
+                    <OrderSummary
+                        names={names()}
+                        totalPrice={totalPrice()}
+                        cancel={this.cancelOrderBurgerHandler}
+                        proceed={this.proceedOrderBurgerHandler} />
                 </Modal>
                 <Burger ingredients={this.state.ingredients} />
                 <BurgerBuildControls
                     names={names()}
                     removeIngredient={this.removeIngredientHandler}
                     addIngredient={this.addIngredientHandler}
-                    totalPrice={this.state.totalPrice}
-                    orderBurger={this.orderBurgerHandler}/>
+                    totalPrice={totalPrice()}
+                    orderBurger={this.startOrderBurgerHandler}/>
             </Aux>
         );
     }
